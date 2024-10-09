@@ -3,6 +3,14 @@
 	.brands-container--footer {
 		display: none;
 	}
+
+	.brands-container--button-7,
+	.brands-container--button-8,
+	.brands-container--button-9,
+	.brands-container--button-10,
+	.brands-container--button-11 {
+		display: block !important;
+	}
 }
 
 /*адаптация для планешта*/
