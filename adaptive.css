@@ -1,0 +1,155 @@
+/*адаптация для мобилки*/
+@media (max-width: 767px) {
+	.brands-container--footer {
+		display: none;
+	}
+}
+
+/*адаптация для планешта*/
+@media (min-width: 768px) and (max-width: 1120px) {
+	body {
+		min-width: 768px;
+		height: 100vh;
+	}
+	.title-swiper {
+		margin: 0;
+		padding: 16px 24px;
+	}
+
+	/* настройка сетки черези гриды */
+	.swiper-wrapper {
+		display: grid !important;
+		grid-template-columns: repeat(3, 240px) !important;
+		grid-template-rows: repeat (4, 72px) !important;
+		row-gap: 16px !important;
+		column-gap: 8px !important;
+		height: 72px !important;
+		width: 224px !important; 
+		padding-left: 24px;	
+		padding-top: 24px;
+		margin: 0;
+	}
+
+	.swiper-slide {
+		flex: block;
+		height: 70px !important;
+		margin-bottom: 0;
+		width: 224px !important;
+	}
+
+	.brands-container--image {
+		margin-right: 100px;
+	}
+
+.brands-container--image--margin-apple,
+.brands-container--image--margin-hp {
+	margin-left: -45px;
+}
+
+	.brands-container--button {
+		border: 2px solid rgba(234, 234, 234, 1);
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 10px;
+		height: 72px;
+		width: 224px;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		z-index: 2;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+	
+	/* позиционирование кнопки */
+	.brands-container--button-showall {
+		width: 134px;
+		height: 24px;
+		background-color: #F8F8F8;
+		border: none;
+		font-family: "TT Lakes";
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(27, 28, 33, 1);
+		padding: 0;
+		margin: 24px auto 24px 45px;
+		position: relative;
+		z-index: 2;
+		top: 75px;
+		display: block;
+	}
+
+	/* позиционирование кнопки */
+	.brands-container--button-hidden {
+		top: 270px !important;
+		display: block;
+	}
+}
+
+/*адаптация для десктопа*/
+@media (min-width: 1120px) {
+	body {
+		min-width: 1120px;
+		height: 100vh;
+	}
+
+	.title-swiper {
+		margin: 0;
+		padding: 16px 24px;
+	}	
+
+	/* настройка сетки черези гриды */
+	.swiper-wrapper {
+		display: grid !important;
+		grid-template-columns: repeat(4, 240px) !important;
+		grid-template-rows: repeat (3, 72px) !important;
+		row-gap: 16px !important;
+		column-gap: 8px !important;
+		height: 72px !important;
+		padding-left: 24px;
+		padding-top: 24px;
+		margin: 0;
+	}
+
+	.swiper-slide {
+		flex: block;
+		height: 70px !important;
+		margin-bottom: 0;
+		width: 224px !important;
+	}
+
+	.brands-container--button-7,
+	.brands-container--button-8 {
+		display: block !important;
+	}
+
+	/* позиционирование кнопки */
+	.brands-container--button-showall {
+		top: 120px;
+		z-index: 1;
+		margin-top: 0;
+	}
+
+	/* позиционирование кнопки */
+	.brands-container--button-hidden {
+		top: 240px;
+		display: block;
+	}
+
+	.brands-container--button {
+		border: 2px solid rgba(234, 234, 234, 1);
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 10px;
+		height: 72px;
+		width: 224px;
+		position: relative;
+		padding: 0;
+		margin: 0;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+}

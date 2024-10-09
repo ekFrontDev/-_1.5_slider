@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<html lang="ru">
+
+		<head>
+			<title>Макет 1.5</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="adaptive.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+			<style>
+        /* добавляем стили для пагинации */
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+						flex: block;
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            background: rgb(129, 129, 129);
+            margin: 0 12px;
+            cursor: pointer;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgba(181, 182, 188, 1);
+        }
+    </style>
+		</head>
+
+		<body>
+
+			<header>
+				<h2 class="title-swiper">Ремонт техники различных брендов</h2>
+			</header>
+
+			<!-- слайдер из списка брендов -->
+			 <!-- swiper-container -->
+			<section class="brands-container swiper-container">
+					<!-- swiper-wrapper -->
+				<ul class="brands-container swiper-wrapper brands-container--list">
+					<!-- swiper-slides -->
+					<li class='brands-container swiper-slide brands-container--p1'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-1">
+							<img class="brands-container--image" src="./image/lenovo.svg" alt="Логотип Lenovo">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p2'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-2">
+							<img class="brands-container--image brands-container--image--margin-samsung" src="./image/samsung.svg" alt="Логотип Samsung">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p3'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-3">
+							<img class="brands-container--image brands-container--image--margin-apple" src="./image/apple.svg" alt="Логотип Apple">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p4'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-4">
+							<img class="brands-container--image" src="./image/viewsonic.svg" alt="Логотип ViewSonic">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p5'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-5">
+							<img class="brands-container--image" src="./image/bosh.svg" alt="Логотип Bosch">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p6'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-6">
+							<img class="brands-container--image brands-container--image--margin-hp" src="./image/hp.svg" alt="Логотип HP">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p7'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-7" id="hiddenButton1" style="display: none;">
+							<img class="brands-container--image" src="./image/acer.svg" alt="Логотип Acer">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p8'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-8" id="hiddenButton2" style="display: none;">
+							<img class="brands-container--image" src="./image/sony.svg" alt="Логотип Sony">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p9'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-9" id="hiddenButton3" style="display: none;">
+							<img class="brands-container--image" src="./image/lenovo.svg" alt="Логотип Lenovo">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p10'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-10" id="hiddenButton4" style="display: none;">
+							<img class="brands-container--image brands-container--image--margin-samsung" src="./image/samsung.svg" alt="Логотип Samsung">
+						</button>
+					</li>
+					<li class='brands-container swiper-slide brands-container--p11'>
+						<button class="brands-container brands-container--button swiper--slide brands-container--button-11" id="hiddenButton5" style="display: none;">
+							<img class="brands-container--image brands-container--image--margin-apple" src="./image/apple.svg" alt="Логотип Apple">
+						</button>
+					</li>
+				</ul>
+
+				<!-- пагинация -->
+				<div class="swiper-pagination"></div>
+
+			</section>
+			
+			<!-- кнопка "показать все" и "скрыть" -->
+			<div class="brands-container--footer">
+				<button class="brands-container--button-showall" id="showButton">Показать все</button>
+				<button class="brands-container--button-hidden" id="hidden" style="display: none;">Скрыть</button>
+			</div>
+
+			<script src="script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		</body>
+
+	</html>
+ 
