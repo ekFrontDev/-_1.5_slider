@@ -21,6 +21,14 @@ const hiddenButton3 = document.getElementById('hiddenButton3');
 const hiddenButton4 = document.getElementById('hiddenButton4');
 const hiddenButton5 = document.getElementById('hiddenButton5');
 
+if (window.matchMedia("(max-width: 767px)").matches) {
+	hiddenButton1.style.display = 'block';
+	hiddenButton2.style.display = 'block';
+	hiddenButton3.style.display = 'block';
+	hiddenButton4.style.display = 'block';
+	hiddenButton5.style.display = 'block';
+}
+
 // функция для открытия элементов на планшете
 if (window.matchMedia("(min-width: 767px)").matches) {
 	showButton.addEventListener('click', () => {
